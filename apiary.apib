@@ -1,35 +1,22 @@
 FORMAT: 1A
-HOST: http://polls.apiblueprint.org/
+HOST: http://polls.apiblueprint.org/shop-nl/nl/categoryBrands
 
-# Polls API
+# Brands API
 
 Polls is a simple API allowing consumers to view polls and vote in them.
 
-## Questions Collection [/questions]
+## CategoryBrands [/Agriculture]
 
-### List All Questions [GET]
+### List brands for category [GET]
 
 + Response 200 (application/json)
 
         [
             {
-                "question": "Favourite programming language?",
-                "published_at": "2015-08-05T08:40:51.620Z",
-                "choices": [
-                    {
-                        "choice": "Swift",
-                        "votes": 2048
-                    }, {
-                        "choice": "Python",
-                        "votes": 1024
-                    }, {
-                        "choice": "Objective-C",
-                        "votes": 512
-                    }, {
-                        "choice": "Ruby",
-                        "votes": 256
-                    }
-                ]
+                  "brands": [
+                  "Arag","Optibelt","Battioni Pagani","TeeJet","VdL","INA/FAG","Bertolini","Vogelsang"
+                 ] 
+            
             }
         ]
 
